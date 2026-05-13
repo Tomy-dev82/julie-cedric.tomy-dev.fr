@@ -32,7 +32,7 @@ try {
     if ($refreshToken === '') {
         echo '<!DOCTYPE html><html lang="fr"><meta charset="utf-8"><title>OAuth Google Drive</title><body>';
         echo "<p>Aucun refresh token n'a ete renvoye par Google.</p>";
-        echo "<p>Retirez l'acces de l'application dans votre compte Google puis relancez google-oauth-start.php.</p>";
+        echo "<p>Retirez l'acces de l'application dans votre compte Google puis relancez backend/google-oauth-start.php.</p>";
         echo '</body></html>';
         exit;
     }
@@ -40,7 +40,7 @@ try {
     $safeToken = htmlspecialchars($refreshToken, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
     echo '<!DOCTYPE html><html lang="fr"><meta charset="utf-8"><title>OAuth Google Drive</title><body>';
     echo '<h1>Refresh token obtenu</h1>';
-    echo '<p>Copiez cette valeur dans google-drive-config.php, cle oauth_refresh_token :</p>';
+    echo '<p>Copiez cette valeur dans backend/google-drive-config.php, cle oauth_refresh_token :</p>';
     echo '<textarea rows="6" cols="120" readonly>' . $safeToken . '</textarea>';
     echo "<p>Ensuite, relancez un test d'upload.</p>";
     echo '</body></html>';
