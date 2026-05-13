@@ -35,6 +35,7 @@
             <a href="#programme">Programme</a>
             <a href="#lieu">Lieu</a>
             <a href="#theme">Theme</a>
+            <a href="#souvenirs">Souvenirs</a>
             <a href="#infos">Infos pratiques</a>
           </div>
         </nav>
@@ -264,6 +265,78 @@
                 Musique, ouverture de bal et ambiance dansante pour prolonger la célébration.
               </p>
             </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="souvenirs">
+          <div class="section-heading">
+            <p class="eyebrow">Photos & videos</p>
+            <h2>Partagez vos souvenirs du mariage</h2>
+            <p>
+              Vous pouvez preparer ici vos photos et videos puis les envoyer directement
+              depuis le site. Une fois le service relie a Google Drive, les fichiers seront
+              transferes en arriere-plan sans redirection.
+            </p>
+          </div>
+
+          <div class="memory-share-grid">
+            <article class="memory-share-card memory-share-highlight">
+              <p class="panel-label">Comment ca marche</p>
+              <ol class="memory-steps">
+                <li>Selectionnez vos photos et/ou videos.</li>
+                <li>Verifiez le recapitulatif affiche sur cette page.</li>
+                <li>Cliquez sur le bouton pour lancer l'envoi direct vers le dossier Google Drive.</li>
+              </ol>
+              <p class="memory-share-note">
+                Formats acceptes : images et videos. Pour les gros fichiers video, une connexion
+                Wi-Fi est recommandee.
+              </p>
+            </article>
+
+            <form class="memory-share-form" id="memory-share-form" novalidate>
+              <label class="upload-field" for="memory-files">
+                <span>Choisir ou ajouter des photos ou videos</span>
+                <input
+                  id="memory-files"
+                  name="memory-files"
+                  type="file"
+                  accept="image/*,video/*"
+                  multiple
+                />
+              </label>
+
+              <div class="memory-share-summary" aria-live="polite">
+                <p class="memory-share-status" id="memory-share-status">
+                  Aucun fichier selectionne pour le moment.
+                </p>
+                <ul class="memory-file-list" id="memory-file-list"></ul>
+              </div>
+
+              <div class="memory-upload-progress" id="memory-upload-progress" hidden>
+                <div
+                  class="memory-upload-progress-bar"
+                  id="memory-upload-progress-bar"
+                  role="progressbar"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                >
+                  <span class="memory-upload-progress-fill" id="memory-upload-progress-fill"></span>
+                </div>
+                <p class="memory-upload-progress-label" id="memory-upload-progress-label">
+                  Progression de l'envoi : 0%
+                </p>
+              </div>
+
+              <div class="memory-share-actions">
+                <button class="button button-primary" id="memory-share-submit" type="submit">
+                  Envoyer les souvenirs
+                </button>
+                <p class="memory-share-help" id="memory-share-help">
+                  Renseignez ensuite l'endpoint Google Drive securise dans le script du site.
+                </p>
+              </div>
+            </form>
           </div>
         </section>
 

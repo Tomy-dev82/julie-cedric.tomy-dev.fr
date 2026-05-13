@@ -1,0 +1,5 @@
+<FilesMatch "^(google-drive-config\.php|google-drive-config\.sample\.php|\.env|\.env\..*)$">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes
