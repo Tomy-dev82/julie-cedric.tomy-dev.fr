@@ -6,6 +6,7 @@ require __DIR__ . DIRECTORY_SEPARATOR . 'google-drive-lib.php';
 
 session_start();
 
+
 try {
     $returnedState = trim((string)($_GET['state'] ?? ''));
     $expectedState = trim((string)($_SESSION['google_drive_oauth_state'] ?? ''));

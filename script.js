@@ -1,7 +1,7 @@
 const weddingDate = "2026-10-03T14:45:00";
 const weddingTimeZone = "Europe/Paris";
 const googleDriveFolderUrl =
-  "https://drive.google.com/drive/folders/1eV3PYcop_AHq5qVdr1kDknaPhkYtcS3Y?usp=drive_link";
+  "https://drive.google.com/drive/folders/1aaxhxgiHzPog9t1i6P8D_PZ8pT49ezmf";
 const googleDriveUploadEndpointUrl = "backend/upload-drive.php";
 
 const countdownRoot = document.querySelector(".countdown");
